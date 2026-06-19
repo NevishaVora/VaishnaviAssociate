@@ -17,7 +17,7 @@ const banners = [
 
 export default function HomeBanner() {
   return (
-    <section className="bg-[#f5f5f5] pt-44 pb-12">
+   <section className="bg-[#f5f5f5] pt-40 md:pt-44 pb-12">
       <div className="mainContainer">
 
         <div className="relative max-w-[1400px] mx-auto">
@@ -34,16 +34,15 @@ export default function HomeBanner() {
           >
             {banners.map((banner, index) => (
               <SwiperSlide key={index}>
-                <div className="relative h-[450px] lg:h-[550px] rounded-[20px] overflow-hidden shadow-lg">
-
+                <div className="relative w-full aspect-[16/9] sm:aspect-[17/9] lg:aspect-[21/9] rounded-[20px] overflow-hidden shadow-lg">
                   <Image
                     src={banner}
                     alt={`Banner ${index + 1}`}
                     fill
                     priority
+                    sizes="100vw"
                     className="object-cover"
                   />
-
                 </div>
               </SwiperSlide>
             ))}

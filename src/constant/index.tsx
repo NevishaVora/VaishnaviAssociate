@@ -23,46 +23,46 @@ export const Routes = [
                 name: "",
                 child: [
                     { name: "Trade License", path: "/registrations/trade-license" },
-                    { name: "GST Registration", path: "/contact-us" },
-                    { name: "LLP Incorporation", path: "/contact-us" },
-                    { name: "ESI/PF Registration", path: "/contact-us" },
-                    { name: "TG Rera Registration", path: "/contact-us" },
-                    { name: "Import Export Code", path: "/contact-us" },
-                    { name: "FCRA Registration", path: "/contact-us" },
-                    { name: "ICEGATE Registration", path: "/contact-us" },
-                    { name: "12A & 80G Registration", path: "/contact-us" },
-                    { name: "Design Registration", path: "/contact-us" },
-                    { name: "Project Report", path: "/contact-us" }
-                ]
-            },
-            {
-                name: "",
-                child: [
                     { name: "Labour License", path: "/contact-us" },
+                    { name: "Food License", path: "/contact-us" },
+                    { name: "GST Registration", path: "/contact-us" },
                     { name: "Udyam Registration", path: "/contact-us" },
+                    { name: "Company Registration", path: "/contact-us" },
+                    { name: "LLP Incorporation", path: "/contact-us" },
                     { name: "Partnership Firm Registration", path: "/contact-us" },
-                    { name: "Professional Tax Registration", path: "/contact-us" },
-                    { name: "Trust Registration", path: "/contact-us" },
-                    { name: "Digital Signature Certificate", path: "/contact-us" },
-                    { name: "Halal License & Registration", path: "/contact-us" },
-                    { name: "RCMC Registration", path: "/contact-us" },
-                    { name: "Bar Code Registration", path: "/contact-us" },
-                    { name: "Copyright Registration", path: "/contact-us" }
+                    { name: "Trademark Registration", path: "/contact-us" },
+                    { name: "ESI/PF Registration", path: "/contact-us" }
                 ]
             },
             {
                 name: "",
                 child: [
-                    { name: "Food License", path: "/contact-us" },
-                    { name: "Company Registration", path: "/contact-us" },
-                    { name: "Trademark Registration", path: "/contact-us" },
+                    { name: "Professional Tax Registration", path: "/contact-us" },
                     { name: "Society Registration", path: "/contact-us" },
+                    { name: "TG Rera Registration", path: "/contact-us" },
+                    { name: "Trust Registration", path: "/contact-us" },
                     { name: "APEDA Registration", path: "/contact-us" },
+                    { name: "Import Export Code", path: "/contact-us" },
+                    { name: "Digital Signature Certificate", path: "/contact-us" },
                     { name: "Drug License", path: "/contact-us" },
+                    { name: "FCRA Registration", path: "/contact-us" },
+                    { name: "Halal License & Registration", path: "/contact-us" }
+                ]
+            },
+            {
+                name: "",
+                child: [
                     { name: "ISO Registration", path: "/contact-us" },
+                    { name: "ICEGATE Registration", path: "/contact-us" },
+                    { name: "RCMC Registration", path: "/contact-us" },
                     { name: "LEI Code", path: "/contact-us" },
+                    { name: "Bar Code Registration", path: "/contact-us" },
                     { name: "BIS Registration", path: "/contact-us" },
-                    { name: "Patent Registration", path: "/contact-us" }
+                    { name: "Design Registration", path: "/contact-us" },
+                    { name: "Copyright Registration", path: "/contact-us" },
+                    { name: "Patent Registration", path: "/contact-us" },
+                    { name: "12A & 80G Registration", path: "/contact-us" },
+                    { name: "Project Report", path: "/contact-us" }
                 ]
             }
         ]
@@ -74,25 +74,28 @@ export const Routes = [
             {
                 name: "",
                 child: [
-                    { name: "Business Loans", path: "/loans/business-loan" },
-                    { name: "Loan Against Property", path: "/contact-us" },
-                    { name: "Educational Loan", path: "/contact-us" }
-                ]
-            },
-            {
-                name: "",
-                child: [
                     { name: "Home Loan", path: "/contact-us" },
+                    { name: "Loan Against Property", path: "/contact-us" },
                     { name: "Personal Loan", path: "/contact-us" },
-                    { name: "Loan Documentation", path: "/contact-us" }
+                    { name: "Business Loan - Secured", path: "/loans/business-loan" },
+                    { name: "Business Loan - Unsecured", path: "/contact-us" }
                 ]
             },
             {
                 name: "",
                 child: [
-                    { name: "Vehicle Loan", path: "/contact-us" },
-                    { name: "Gold Loan", path: "/contact-us" },
-                    { name: "Venture Capital Funding", path: "/contact-us" }
+                    { name: "Working Capital", path: "/contact-us" },
+                    { name: "Education Loans - Secured", path: "/contact-us" },
+                    { name: "Education Loans - Unsecured", path: "/contact-us" },
+                    { name: "Machinery Loans", path: "/contact-us" },
+                    { name: "Project Funding", path: "/contact-us" }
+                ]
+            },
+            {
+                name: "",
+                child: [
+                    { name: "Car Loans", path: "/contact-us" },
+                    { name: "Commercial Vehicle Loans", path: "/contact-us" }
                 ]
             }
         ]
@@ -104,94 +107,207 @@ export const Routes = [
             {
                 name: "",
                 child: [
-                    { name: "ITR Filing", path: "/compliance/itr-filing" },
-                    { name: "ESI PF Return Filings", path: "/contact-us" },
-                    { name: "FDI Filing With RBI", path: "/contact-us" },
-                    { name: "GST Notice", path: "/contact-us" },
-                    { name: "MOA/AOA Amendments", path: "/contact-us" },
-                    { name: "CA Certifications", path: "/contact-us" }
-                ]
-            },
-            {
-                name: "",
-                child: [
+                    { name: "ITR Filings", path: "/compliance/itr-filing" },
                     { name: "GST Filings", path: "/contact-us" },
-                    { name: "ROC Filings", path: "/contact-us" },
-                    { name: "Payroll", path: "/contact-us" },
-                    { name: "Appeals", path: "/contact-us" },
-                    { name: "Winding Up Company", path: "/contact-us" }
+                    { name: "TDS Filings", path: "/contact-us" },
+                    { name: "ESI PF Return Filings", path: "/contact-us" },
+                    { name: "ROC Filings", path: "/contact-us" }
                 ]
             },
             {
                 name: "",
                 child: [
-                    { name: "TDS Filings", path: "/contact-us" },
                     { name: "15CA & 15CB Filing", path: "/contact-us" },
+                    { name: "FDI Filing With RBI", path: "/contact-us" },
+                    { name: "Payroll", path: "/contact-us" },
                     { name: "Income Tax Notice", path: "/contact-us" },
+                    { name: "GST Notice", path: "/contact-us" }
+                ]
+            },
+            {
+                name: "",
+                child: [
+                    { name: "Appeals", path: "/contact-us" },
                     { name: "Director Change", path: "/contact-us" },
+                    { name: "MOA/AOA Amendments", path: "/contact-us" },
+                    { name: "Winding Up Company", path: "/contact-us" },
                     { name: "Winding Up LLP", path: "/contact-us" }
                 ]
             }
         ]
     },
     {
-        name: "Consultations",
-        path: "/consultations",
+        name: "Corporate Services",
+        path: "/corporate-services",
         child: [
             {
                 name: "",
                 child: [
-                    { name: "Legal Consultation", path: "/contact-us" },
-                    { name: "Business Consultation", path: "/contact-us" }
+                    { name: "Loan Against Property", path: "/contact-us" },
+                    { name: "Working Capital Loans", path: "/contact-us" },
+                    { name: "Plant & Machinery Loans", path: "/contact-us" },
+                    { name: "Letter of Credit ( LC )", path: "/contact-us" },
+                    { name: "Bank Guarantee ( BG )", path: "/contact-us" }
                 ]
             },
             {
                 name: "",
                 child: [
-                    { name: "CA Consultation", path: "/contact-us" },
-                    { name: "Arbitration Services", path: "/contact-us" }
+                    { name: "Corporate Funding - DEBT", path: "/contact-us" },
+                    { name: "Corporate Funding - EQUITY", path: "/contact-us" },
+                    { name: "Distress NPA Funding", path: "/contact-us" },
+                    { name: "NCLT IBC cases across India", path: "/contact-us" },
+                    { name: "DRT Cases all Over India", path: "/contact-us" }
                 ]
             },
             {
                 name: "",
                 child: [
-                    { name: "Architect Consultation", path: "/contact-us" },
-                    { name: "Investment Planning", path: "/contact-us" }
+                    { name: "NPA Bank Loan Settlements", path: "/contact-us" },
+                    { name: "ED CBI EOW Police Cases", path: "/contact-us" },
+                    { name: "138 NA & All Bail Matters", path: "/contact-us" }
                 ]
             }
         ]
     },
     {
-        name: "IT Solutions",
-        path: "/it-solutions",
+        name: "CIBIL & Credit Report Services",
+        path: "/cibil-credit-report-services",
         child: [
             {
                 name: "",
                 child: [
-                    { name: "Web Solutions", path: "/contact-us" },
-                    { name: "Product/Platform Solution", path: "/contact-us" }
+                    { name: "Correction of Wrong / Duplicate Entries", path: "/contact-us" },
+                    { name: "Removing Disputes, Negative Remarks & Repayments", path: "/contact-us" }
                 ]
             },
             {
                 name: "",
                 child: [
-                    { name: "Mobile App Solutions", path: "/contact-us" },
-                    { name: "Digital Marketing", path: "/contact-us" }
+                    { name: "Incorrect DPD Removal & Repayments Update", path: "/contact-us" },
+                    { name: "Identity / PAN Mismatch Settlement Status Correction", path: "/contact-us" }
                 ]
             },
             {
                 name: "",
                 child: [
-                    { name: "CRM & CMS Solutions", path: "/contact-us" },
-                    { name: "IT Consultation", path: "/contact-us" }
+                    { name: "Guidance for NPA / Overdue Negotiation", path: "/contact-us" },
+                    { name: "Full Credit Score Repair Support", path: "/contact-us" }
                 ]
             }
         ]
     },
-    {
-        name: "Other Services",
-        path: "/contact-us"
-    },
+    // {
+    //     name: "Services",
+    //     path: "/services",
+    //     child: [
+    //         {
+    //             name: "Corporate Services",
+    //             child: [
+    //                 { name: "Loan Against Property", path: "/contact-us" },
+    //                 { name: "Working Capital Loans", path: "/contact-us" },
+    //                 { name: "Plant & Machinery Loans", path: "/contact-us" },
+    //                 { name: "Letter of Credit ( LC )", path: "/contact-us" },
+    //                 { name: "Bank Guarantee ( BG )", path: "/contact-us" },
+    //                 { name: "Corporate Funding - DEBT", path: "/contact-us" },
+    //                 { name: "Corporate Funding - EQUITY", path: "/contact-us" },
+    //                 { name: "Distress NPA Funding", path: "/contact-us" },
+    //                 { name: "NCLT IBC cases across India", path: "/contact-us" },
+    //                 { name: "DRT Cases all Over India", path: "/contact-us" },
+    //                 { name: "NPA Bank Loan Settlements", path: "/contact-us" },
+    //                 { name: "ED CBI EOW Police Cases", path: "/contact-us" },
+    //                 { name: "138 NA & All Bail Matters", path: "/contact-us" }
+    //             ]
+    //         },
+    //         {
+    //             name: "Loans",
+    //             child: [
+    //                 { name: "Home Loan", path: "/contact-us" },
+    //                 { name: "Loan Against Property", path: "/contact-us" },
+    //                 { name: "Personal Loan", path: "/contact-us" },
+    //                 { name: "Business Loan - Secured", path: "/loans/business-loan" },
+    //                 { name: "Business Loan - Unsecured", path: "/contact-us" },
+    //                 { name: "Working Capital", path: "/contact-us" },
+    //                 { name: "Education Loans - Secured", path: "/contact-us" },
+    //                 { name: "Education Loans - Unsecured", path: "/contact-us" },
+    //                 { name: "Machinery Loans", path: "/contact-us" },
+    //                 { name: "Project Funding", path: "/contact-us" },
+    //                 { name: "Car Loans", path: "/contact-us" },
+    //                 { name: "Commercial Vehicle Loans", path: "/contact-us" }
+    //             ]
+    //         },
+    //         {
+    //             name: "Registrations",
+    //             child: [
+    //                 { name: "Trade License", path: "/registrations/trade-license" },
+    //                 { name: "Labour License", path: "/contact-us" },
+    //                 { name: "Food License", path: "/contact-us" },
+    //                 { name: "GST Registration", path: "/contact-us" },
+    //                 { name: "Udyam Registration", path: "/contact-us" },
+    //                 { name: "Company Registration", path: "/contact-us" },
+    //                 { name: "LLP Incorporation", path: "/contact-us" },
+    //                 { name: "Partnership Firm Registration", path: "/contact-us" },
+    //                 { name: "Trademark Registration", path: "/contact-us" },
+    //                 { name: "ESI/PF Registration", path: "/contact-us" },
+    //                 { name: "Professional Tax Registration", path: "/contact-us" },
+    //                 { name: "Society Registration", path: "/contact-us" },
+    //                 { name: "TG Rera Registration", path: "/contact-us" },
+    //                 { name: "Trust Registration", path: "/contact-us" },
+    //                 { name: "APEDA Registration", path: "/contact-us" },
+    //                 { name: "Import Export Code", path: "/contact-us" },
+    //                 { name: "Digital Signature Certificate", path: "/contact-us" },
+    //                 { name: "Drug License", path: "/contact-us" },
+    //                 { name: "FCRA Registration", path: "/contact-us" },
+    //                 { name: "Halal License & Registration", path: "/contact-us" },
+    //                 { name: "ISO Registration", path: "/contact-us" },
+    //                 { name: "ICEGATE Registration", path: "/contact-us" },
+    //                 { name: "RCMC Registration", path: "/contact-us" },
+    //                 { name: "LEI code", path: "/contact-us" },
+    //                 { name: "12A & 80G", path: "/contact-us" },
+    //                 { name: "Bar Code Registration", path: "/contact-us" },
+    //                 { name: "BIS Registration", path: "/contact-us" },
+    //                 { name: "Design Registration", path: "/contact-us" },
+    //                 { name: "Copyright Registration", path: "/contact-us" },
+    //                 { name: "Patent Registration", path: "/contact-us" },
+    //                 { name: "Project Report", path: "/contact-us" }
+    //             ]
+    //         },
+    //         {
+    //             name: "Compliance",
+    //             child: [
+    //                 { name: "ITR Filings", path: "/compliance/itr-filing" },
+    //                 { name: "GST Filings", path: "/contact-us" },
+    //                 { name: "TDS Filings", path: "/contact-us" },
+    //                 { name: "ESI PF Return Filings", path: "/contact-us" },
+    //                 { name: "FDI Filing with RBI", path: "/contact-us" },
+    //                 { name: "Payroll", path: "/contact-us" },
+    //                 { name: "Income Tax Notice", path: "/contact-us" },
+    //                 { name: "GST Notice", path: "/contact-us" },
+    //                 { name: "Appeals", path: "/contact-us" },
+    //                 { name: "Director change", path: "/contact-us" },
+    //                 { name: "MOA/AOA Amendments", path: "/contact-us" },
+    //                 { name: "Winding up Company", path: "/contact-us" },
+    //                 { name: "Winding up LLP", path: "/contact-us" },
+    //                 { name: "15CA & 15CB Filing", path: "/contact-us" }
+    //             ]
+    //         },
+    //         {
+    //             name: "CIBIL & Credit Report Services",
+    //             child: [
+    //                 { name: "Correction of Wrong / Duplicate Entries", path: "/contact-us" },
+    //                 { name: "Removing Disputes, Negative Remarks & Repayments", path: "/contact-us" },
+    //                 { name: "Incorrect DPD Removal & Repayments Update", path: "/contact-us" },
+    //                 { name: "Identity / PAN Mismatch Settlement Status Correction", path: "/contact-us" },
+    //                 { name: "Guidance for NPA / Overdue Negotiation", path: "/contact-us" },
+    //                 { name: "Full Credit Score Repair Support", path: "/contact-us" }
+    //             ]
+    //         }
+    //     ]
+    // },
+    // {
+    //     name: "Other Services",
+    //     path: "/contact-us"
+    // },
     {
         name: "Contact",
         path: "/contact-us"
@@ -2101,11 +2217,11 @@ export const OurTeamData = [
 ]
 
 export const InformationData = {
-    email: "vaishnaviassociates@gmail.com",
+    email: "vaishnaviassociates.services@gmail.com",
     address: "C1-1004, Business Square,Near City Center Mall,Tech Park Road,Ahmedabad, Gujarat, 380015",
     addressLink: "https://maps.app.goo.gl/7w1yTbJMZk37FQcAA",
     addressIframLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.9388711288834!2d72.86865777526232!3d21.234272480467016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fbe056894ef%3A0x7bfc941e108f23a5!2sIT%20Park!5e0!3m2!1sen!2sin!4v1735196690787!5m2!1sen!2sin",
-    contactNumber: "+91 99999 99999",
+    contactNumber: "+91 92999 99676",
     website: "https://vaishnaviassociates.com"
 }
 

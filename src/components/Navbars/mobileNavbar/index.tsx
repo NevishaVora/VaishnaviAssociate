@@ -1,8 +1,7 @@
 "use client"
 import AddIcon from '@mui/icons-material/Add';
 import CloseIcon from '@mui/icons-material/Close';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
+// parent expand/collapse will use Add/Remove (plus/minus)
 import RemoveIcon from '@mui/icons-material/Remove';
 import { Collapse, List, ListItemButton } from '@mui/material';
 import { Logos, Routes } from '@src/constant';
@@ -34,7 +33,7 @@ const MobileDrawer = ({ drawerToggle, setDrawerToggle }: IMobileDrawerProps) => 
     return (
         <div onClick={(e) => { if (e.target === e.currentTarget) sideNavCloseHandler(); }} className={drawerToggle ? 'fixed inset-0 z-[9999] bg-[--shadow-color] lg:hidden' : 'hidden'}>
             <div className={`fixed top-0 left-0 w-full sm:w-[320px] h-full bg-[--white] transition-transform ease-in-out duration-500 overflow-y-auto ${drawerToggle ? 'translate-x-0' : '-translate-x-full'} z-[10000]`}>
-                <div className="flex justify-between items-center pb-4 pt-6 px-4">
+                <div className="flex justify-between items-center pb-2 pt-2 px-4">
                     <button aria-label="Close mobile menu" onClick={sideNavCloseHandler} className="p-2">
                         <CloseIcon fontSize="medium" />
                     </button>
@@ -49,20 +48,23 @@ const MobileDrawer = ({ drawerToggle, setDrawerToggle }: IMobileDrawerProps) => 
                         />
                     </div>
                 </div>
-                <List component="nav" className='space-y-3'>
+                <List component="nav" className='space-y-0'>
                     {Routes.map((val: IRoutes, index: number) => (
                         <div key={index} className='w-full '>
                             <ListItemButton >
-                                <div className={`flex items-center justify-between w-full border-b-2 border-[#CCD3D1] hover:text-[--primary-theme-color] pb-2 hover:border-[--primary-theme-color] transition-all ease-in-out duration-500 tracking-wider `} onClick={() => {
-                                    if (val?.child) {
-                                        handleTabClick(index)
-                                    } else {
-                                        router.push(val.path)
-                                        sideNavCloseHandler()
-                                    }
-                                }} >
-                                    <li className='!text-[20px] capitalize !font-semibold'>{val.name}</li>
-                                    {val?.child && <span>{tabOpenIndex === index ? <ExpandLess /> : <ExpandMore />}</span>}
+                                <div className={`flex items-center justify-between gap-2 w-full border-b-2 border-[#CCD3D1] pb-1 tracking-wider transition-all ease-in-out duration-500` }>
+                                    <li className='!text-[20px] capitalize !font-semibold px-0 py-1 flex-1' onClick={() => {
+                                        if (!val?.child) {
+                                            router.push(val.path)
+                                            sideNavCloseHandler()
+                                        }
+                                    }}>{val.name}</li>
+
+                                    {val?.child && (
+                                        <div className='p-2 cursor-pointer flex-shrink-0' onClick={(e) => { e.stopPropagation(); handleTabClick(index); }}>
+                                            {tabOpenIndex === index ? <RemoveIcon /> : <AddIcon />}
+                                        </div>
+                                    )}
                                 </div>
                             </ListItemButton>
                             {val?.child &&
@@ -72,11 +74,11 @@ const MobileDrawer = ({ drawerToggle, setDrawerToggle }: IMobileDrawerProps) => 
                                             return (
                                                 <div key={idx}>
                                                     <ListItemButton>
-                                                        <div className={`flex items-center justify-between w-full border-b-2 border-[#CCD3D1] hover:text-[--primary-theme-color] pb-[6px] hover:border-[--primary-theme-color] transition-all ease-in-out duration-500 tracking-wider ml-2`}  >
-                                                            <li className='!text-[15px] capitalize !font-medium' onClick={() => {
+                                                        <div className={`flex items-center justify-between gap-2 w-full border-b-2 border-[#CCD3D1] hover:text-[--primary-theme-color] pb-1 hover:border-[--primary-theme-color] transition-all ease-in-out duration-500 tracking-wider ml-2`}  >
+                                                            <li className='!text-[15px] capitalize !font-medium py-1 flex-1' onClick={() => {
                                                                 handleChildTabClick(idx)
                                                             }}>{childRoute.name} </li>
-                                                            {childRoute?.child && <div onClick={() => {
+                                                            {childRoute?.child && <div className='cursor-pointer flex-shrink-0' onClick={() => {
                                                                 handleChildTabClick(idx)
                                                             }}>
                                                                 <span>{childTabOpenIndex === idx ? <RemoveIcon /> : <AddIcon />}</span>
@@ -85,7 +87,7 @@ const MobileDrawer = ({ drawerToggle, setDrawerToggle }: IMobileDrawerProps) => 
                                                     </ListItemButton>
                                                     {childRoute?.child &&
                                                         <Collapse in={childTabOpenIndex === idx} timeout="auto" unmountOnExit>
-                                                            <List component="div" disablePadding className='space-y-2'>
+                                                            <List component="div" disablePadding className='space-y-0'>
                                                                 {childRoute?.child?.map((subChild: { name: string, path: string, image?: string }, i: number) => {
                                                                     return (
                                                                         <ListItemButton key={i}>

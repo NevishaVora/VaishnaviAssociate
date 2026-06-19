@@ -13,10 +13,10 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-[--primary-theme-color]/10 text-[--gray]">
-      <div className="mainContainer py-12">
-        <div className="grid gap-14 lg:grid-cols-3">
+      <div className="mainContainer py-10 md:py-12">
+        <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-5">
-            <div className="w-[150px]">
+            <div className="w-28 md:w-36">
               <Image
                 src={Logos.verticalBlackLogo}
                 alt="Vaishnavi Associates Logo"
@@ -25,12 +25,12 @@ const Footer = () => {
                 className="w-full h-auto object-contain"
               />
             </div>
-            <p className="text-sm leading-7">
+            <p className="text-sm md:text-base leading-6 md:leading-7">
               Vaishnavi Associates provides trusted registration, loan, compliance and IT services for businesses across Ahmedabad and beyond.
             </p>
           </div>
 
-          <div className="grid gap-8  mt-4 sm:grid-cols-2 lg:grid-cols-1">
+          <div className="mt-4">
             <div>
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[--primary-theme-color]">Company</h3>
               <ul className="space-y-3 text-sm">
@@ -88,15 +88,14 @@ const Footer = () => {
               </li>
               <li className="text-sm">
                 <span className="font-semibold">Address: </span>
-                <span>{InformationData.address}</span>
+                <span className="block break-words">{InformationData.address}</span>
               </li>
             </ul>
           </div>
         </div>
-
-        <div className="border-t border-gray-300 mt-10 pt-6 flex flex-col lg:flex-row items-center justify-between gap-4 text-sm">
-          <p>© {new Date().getFullYear()} Vaishnavi Associates. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+        <div className="border-t border-gray-300 mt-8 pt-6 flex flex-col lg:flex-row items-center justify-between gap-4 text-sm text-center lg:text-left">
+          <p className="w-full lg:w-auto">© {new Date().getFullYear()} Vaishnavi Associates. All rights reserved.</p>
+          <div className="flex items-center gap-4 justify-center lg:justify-start">
             <Link href="#" target="_blank" className="text-[--gray] hover:text-[--primary-theme-color] transition-all">
               <FacebookIcon />
             </Link>

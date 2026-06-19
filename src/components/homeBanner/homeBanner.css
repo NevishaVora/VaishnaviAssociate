@@ -9,6 +9,32 @@
   left: 20px !important;
 }
 
+@media screen and (max-width: 768px) {
+  .bannerSlider .swiper-button-prev,
+  .bannerSlider .swiper-button-next {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .bannerSlider .swiper-button-prev:after,
+  .bannerSlider .swiper-button-next:after {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bannerSlider .swiper-button-prev,
+  .bannerSlider .swiper-button-next {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .bannerSlider .swiper-button-prev:after,
+  .bannerSlider .swiper-button-next:after {
+    font-size: 16px !important;
+  }
+}
+
 .bannerSlider .swiper-button-next {
   right: 20px !important;
 }

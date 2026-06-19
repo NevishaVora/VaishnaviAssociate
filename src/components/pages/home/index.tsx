@@ -47,7 +47,7 @@ const Home = () => {
                 </div>
 
                 {/* Testimonials Section */}
-                <section className="mainContainer py-20">
+                <section className="mainContainer py-10 md:py-20">
 
                     {/* Heading */}
                     <div className="text-center mb-16">

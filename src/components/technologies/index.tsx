@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa"
 
 const Technologies = () => {
     return (
-        <section className="mainContainer py-20">
+       <section className="mainContainer py-10 md:py-20">
             <div className="text-center">
                 <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">
                     Get Expert{" "}

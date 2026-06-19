@@ -85,18 +85,11 @@ const Navbar = () => {
                             </React.Fragment>
                         ))}
                     </div>
-                    {/* <div className='flex items-center space-x-4'>
-                        <button
-                            className="flex items-center gap-1 border-[2px] border-[--primary-theme-color] hover:bg-[--primary-theme-color] text-[--primary-theme-color] hover:text-[--white] px-4 py-1.5 rounded-full font-semibold text-[13px] xl:text-[14px] 2xl:text-[15px] 3xl:text-[18px] transition-all duration-300"
-                            onClick={() => router.push("/login")}
-                        >
-                            <LoginIcon fontSize="small" style={{ fontSize: '16px' }} />
-                            <span>Login</span>
-                        </button>
+                    <div className='flex items-center space-x-4'>
                         <button aria-label="Open mobile menu" onClick={sideNavHandler} className='lg:hidden cursor-pointer p-1'>
                             <ClearAllIcon className={`text-[30px] md:text-[40px]`} />
                         </button>
-                    </div> */}
+                    </div>
                 </div>
             </div>
             <Popover
@@ -105,39 +98,49 @@ const Navbar = () => {
                 onClose={popupCloseHandler}
                 anchorOrigin={{
                     vertical: 'bottom',
-                    horizontal: 'center',
+                    horizontal: 'left',
                 }}
                 transformOrigin={{
                     vertical: 'top',
-                    horizontal: 'center',
+                    horizontal: 'left',
                 }}
-                sx={{ bgcolor: "rgba(0, 0, 0, 0.1)" }}
+                PaperProps={{
+                    sx: {
+                        width: '100vw',
+                        left: 0,
+                        right: 0,
+                        margin: 0,
+                        bgcolor: 'transparent',
+                        boxShadow: 'none',
+                    }
+                }}
             >
-                <div className={`py-7 px-10 w-full flex flex-wrap items-start justify-between space-x-10`}>
-                    {selectedTechnologies?.map((technology: IRoutesChild, idx: number) => (
-                        <div className={`space-y-2`} key={idx}>
-                            <h1 className='text-lg font-semibold !mb-3 whitespace-nowrap truncate max-w-xs'>{technology.name}</h1>
-                            <ul className='space-y-1'>
-                                {technology?.child?.map((techChild: { name: string, path: string, image?: string }, i: number) => {
-                                    return (
-                                        <li
-                                            key={i}
-                                            className='py-[6px] px-2 rounded-lg text-[14px] font-medium text-[--gray] cursor-pointer tracking-wider hover:bg-[--background-color] hover:text-[--primary-theme-color] transition-all ease-in-out duration-500 whitespace-nowrap truncate max-w-xs'
-                                            onClick={() => clickHandler(techChild.path)}
-                                        >
-                                            {techChild.name}
-                                        </li>
-                                    )
-                                })}
-                            </ul>
+                <div className="w-full flex justify-center">
+                    <div className={`w-[95%] bg-white rounded-xl overflow-hidden mt-2 transform transition-all duration-300 ease-out ${Boolean(anchorElServices) ? 'shadow-2xl ring-1 ring-gray-200 scale-100 opacity-100 translate-y-0' : 'shadow-sm scale-95 opacity-0 -translate-y-2'}`}>
+                        <div className={`py-7 px-8 w-full flex flex-wrap items-start justify-between gap-8`}> 
+                            {selectedTechnologies?.map((technology: IRoutesChild, idx: number) => (
+                                <div className={`space-y-2 min-w-[180px]`} key={idx}>
+                                    <h1 className='text-lg font-semibold !mb-3 whitespace-nowrap truncate max-w-xs'>{technology.name}</h1>
+                                    <ul className='space-y-1'>
+                                        {technology?.child?.map((techChild: { name: string, path: string, image?: string }, i: number) => {
+                                            return (
+                                                <li
+                                                    key={i}
+                                                    className='py-[6px] px-2 rounded-lg text-[14px] font-medium text-[--gray] cursor-pointer tracking-wider hover:bg-[--background-color] hover:text-[--primary-theme-color] transition-all ease-in-out duration-500 whitespace-nowrap'
+                                                    onClick={() => clickHandler(techChild.path)}
+                                                >
+                                                    {techChild.name}
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
+                            ))}
                         </div>
-                    ))}
+                    </div>
                 </div>
-            </Popover >
-            <MobileDrawer
-                drawerToggle={drawerToggle}
-                setDrawerToggle={setDrawerToggle}
-            />
+            </Popover>
+            <MobileDrawer drawerToggle={drawerToggle} setDrawerToggle={setDrawerToggle} />
         </div >
     )
 }
