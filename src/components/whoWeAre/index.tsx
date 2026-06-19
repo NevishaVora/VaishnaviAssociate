@@ -12,7 +12,7 @@ const WhoWeAre = () => {
                     <h1 className="text-[--primary-theme-color] text-xl md:text-3xl lg:text-4xl text-center font-bold">EXPERIENCE : EXCELLENCE : ENTHUSIASM </h1>
                     <p className="text-lg lg:text-xl text-center font-medium">We craft solutions that elevate your business.</p>
                 </div>
-                <p className="text-[--gray] font-medium text-sm sm:text-base text-center lg:w-[90%] mx-auto">Onehub Solution is your go-to technology partner in Ahmedabad, delivering unparalleled business solutions. Our expertise and commitment to customer satisfaction drive everything we do.</p>
+                <p className="text-[--gray] font-medium text-sm sm:text-base text-center lg:w-[90%] mx-auto">Vaishnavi Associates Solution is your go-to technology partner in Ahmedabad, delivering unparalleled business solutions. Our expertise and commitment to customer satisfaction drive everything we do.</p>
                 <div className="!mt-24 grid grid-cols-1 lg:grid-cols-3 gap-20 lg:gap-10">
                     {WhoWeAreData.map((val: IWhoWeAreData, index: number) => {
                         return (

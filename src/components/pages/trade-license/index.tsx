@@ -79,15 +79,15 @@ const TradeLicense = () => {
             </span>
 
             <h1 className="text-4xl lg:text-5xl font-semibold text-[--secondary-theme-color] leading-tight">
-              Apply for Trade License Easily with OneHub
+              Apply for Trade License Easily with Vaishnavi Associates
             </h1>
 
             <p className="text-[--gray] max-w-xl leading-8 text-lg">
-              A Trade License is an official permission issued by the local municipal authority that enables businesses to operate safely and legally within the city. At OneHub, we simplify the application process so you can focus on running your business.
+              A Trade License is an official permission issued by the local municipal authority that enables businesses to operate safely and legally within the city. At Vaishnavi Associates, we simplify the application process so you can focus on running your business.
             </p>
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-              <Link href="/login" className="inline-flex items-center justify-center rounded-full bg-[--primary-theme-color] px-4 py-2 text-white font-semibold shadow-[0_20px_50px_rgba(247,148,29,0.18)] transition duration-300 hover:-translate-y-1">
+              <Link href="/contact-us" className="inline-flex items-center justify-center rounded-full bg-[--primary-theme-color] px-4 py-2 text-white font-semibold shadow-[0_20px_50px_rgba(247,148,29,0.18)] transition duration-300 hover:-translate-y-1">
                 Apply Now
               </Link>
               <p className="text-[--gray] max-w-xl">
@@ -98,15 +98,15 @@ const TradeLicense = () => {
 
           <div className="rounded-[32px] border border-[#e6e8ed] bg-[--white] p-8 shadow-[0_20px_60px_rgba(247,148,29,0.12)]">
             <h2 className="text-3xl font-semibold text-[--secondary-theme-color] mb-5">
-              OneHub - Easy way to apply Trade License
+              Vaishnavi Associates - Easy way to apply Trade License
             </h2>
             <p className="text-[--gray] leading-8 mb-6">
-              OneHub helps you submit your trade license application with confidence. We review your documents, prepare forms, and coordinate with the Municipal Corporation so you get approval faster.
+              Vaishnavi Associates helps you submit your trade license application with confidence. We review your documents, prepare forms, and coordinate with the Municipal Corporation so you get approval faster.
             </p>
 
             <div className="rounded-[28px] bg-[#fff3e0] p-6">
               <h3 className="text-xl font-semibold text-[--secondary-theme-color] mb-3">
-                Why choose OneHub?
+                Why choose Vaishnavi Associates?
               </h3>
               <ul className="space-y-3 text-[--gray]">
                 <li>Complete application support from start to finish.</li>

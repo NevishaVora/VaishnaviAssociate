@@ -21,12 +21,12 @@ const Technologies = () => {
                 </h1>
 
                 <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mt-3">
-                    All In One Hub!
+                    All In Vaishnavi Associates!
                 </h2>
 
                 <p className="text-[--gray] max-w-3xl mx-auto mt-8 text-base md:text-lg">
                     Whether you're starting a new business, managing daily accounts,
-                    or navigating compliance, One Hub Solutions is your digital
+                    or navigating compliance, Vaishnvi Associates is your digital
                     platform designed to simplify it all.
                 </p>
 

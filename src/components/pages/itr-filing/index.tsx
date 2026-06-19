@@ -75,11 +75,11 @@ const ItrFiling = () => {
             </span>
 
             <h1 className="text-4xl lg:text-5xl font-semibold text-[--secondary-theme-color] leading-tight">
-              File Your ITR Quickly and Accurately with OneHub
+              File Your ITR Quickly and Accurately with Vaishnavi Associates
             </h1>
 
             <p className="text-[--gray] max-w-xl leading-8 text-lg">
-              OneHub helps individuals and businesses complete income tax return filing with full accuracy. We prepare your return, verify documents, and submit it to the Income Tax Department on time.
+              Vaishnavi Associates helps individuals and businesses complete income tax return filing with full accuracy. We prepare your return, verify documents, and submit it to the Income Tax Department on time.
             </p>
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
@@ -94,7 +94,7 @@ const ItrFiling = () => {
 
           <div className="rounded-[32px] border border-[#e6e8ed] bg-[--white] p-8 shadow-[0_20px_60px_rgba(247,148,29,0.12)]">
             <h2 className="text-3xl font-semibold text-[--secondary-theme-color] mb-5">
-              OneHub - Easy way for ITR Filing
+              Vaishnavi Associates - Easy way for ITR Filing
             </h2>
             <p className="text-[--gray] leading-8 mb-6">
               Our team reviews your financial documents, calculates deductions, and prepares the return so you can file confidently. We make sure your ITR is compliant and submitted before the deadline.
@@ -102,7 +102,7 @@ const ItrFiling = () => {
 
             <div className="rounded-[28px] bg-[#fff3e0] p-6">
               <h3 className="text-xl font-semibold text-[--secondary-theme-color] mb-3">
-                Why choose OneHub for ITR filing?
+                Why choose Vaishnavi Associates for ITR filing?
               </h3>
               <ul className="space-y-3 text-[--gray]">
                 <li>Accurate tax return preparation with verified supporting documents.</li>
@@ -139,7 +139,7 @@ const ItrFiling = () => {
               Required Documents & Details to Apply ITR Filing
             </h2>
             <p className="text-[--gray] leading-8 mb-8">
-              To complete your ITR filing, gather the documents listed below. OneHub will help you organize everything and submit the return accurately.
+              To complete your ITR filing, gather the documents listed below. OnVaishnavi Associates will help you organize everything and submit the return accurately.
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2">

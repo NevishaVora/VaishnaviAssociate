@@ -12,7 +12,7 @@ const AboutRules = () => {
                 </h1>
 
                 <h1 className="heading text-2xl md:text-3xl lg:text-4xl font-bold">
-                    Ground rules at Onehub
+                    Ground rules at Vaishnavi Associates
                 </h1>
 
                 <p className="text-[--gray] text-sm sm:text-base lg:text-[18px] lg:w-[80%] mt-5 mx-auto lg:mx-0">
