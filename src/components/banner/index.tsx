@@ -5,7 +5,7 @@ import Breadcrumb from "../breadcrumb"
 
 const Banner = ({ route, name, title }: IBannerProps) => {
     return (
-        <div className="homeBannerGradientBackgroundColor w-full h-full relative overflow-hidden py-36 xl:pt-44 xl:pb-32">
+    <div className="homeBannerGradientBackgroundColor w-full h-full relative overflow-hidden pt-36 pb-16 xl:pt-44 xl:pb-12">
             <div className="mainContainer flex flex-col justify-center items-center space-y-2 ">
                 <Breadcrumb route={route} name={name} />
                 <h1 className="text-2xl lg:text-3xl font-bold text-center">{title}</h1>

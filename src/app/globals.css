@@ -7,18 +7,36 @@
 }
 
 :root {
-  --primary-theme-color: #f7941d;
-  --primary-shadow-color: rgba(247, 148, 29, 0.2);
-  /* //#f7941d33 */
-  --secondary-theme-color: black;
-  --secondary-shadow-color: rgba(0, 0, 0, 0.3);
-  --shadow-color: rgba(0, 0, 0, 0.4);
-  --background-color: #F0F3F7;
-  --white: white;
-  --black: black;
-  --gray: #6084a4;
-  --theme-gradient-color: linear-gradient(0deg, #f7941d 35%, #f9b652 60%, #fce3ba 100%);
-  --home-theme-gradient-color: linear-gradient(270deg, rgba(254, 243, 230, 0.5) 10%, rgba(255, 255, 255, 1) 71%);
+  /* Primary Brand Gold */
+  --primary-theme-color: #D4AF37;
+  --primary-shadow-color: rgba(212, 175, 55, 0.2);
+
+  /* Secondary Brand Blue */
+  --secondary-theme-color: #234B8C;
+  --secondary-shadow-color: rgba(35, 75, 140, 0.3);
+
+  /* Common Colors */
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --background-color: #F5F7FA;
+
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray: #6084A4;
+
+  /* Gold → Blue Gradient */
+  --theme-gradient-color: linear-gradient(
+    135deg,
+    #D4AF37 0%,
+    #E3C76B 40%,
+    #234B8C 100%
+  );
+
+  /* Light Gold Background Gradient */
+  --home-theme-gradient-color: linear-gradient(
+    270deg,
+    rgba(212, 175, 55, 0.08) 10%,
+    rgba(255, 255, 255, 1) 71%
+  );
 }
 
 .themeGradientBackgroundColor {
