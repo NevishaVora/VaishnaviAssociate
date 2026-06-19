@@ -1,0 +1,20 @@
+.bannerSlider .swiper-button-prev,
+.bannerSlider .swiper-button-next {
+  color: #fff !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.bannerSlider .swiper-button-prev {
+  left: 20px !important;
+}
+
+.bannerSlider .swiper-button-next {
+  right: 20px !important;
+}
+
+.bannerSlider .swiper-button-prev:after,
+.bannerSlider .swiper-button-next:after {
+  font-size: 35px !important;
+  font-weight: bold;
+}
