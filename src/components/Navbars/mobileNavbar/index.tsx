@@ -9,7 +9,7 @@ import { Logos, Routes } from '@src/constant';
 import { IMobileDrawerProps, IRoutesChild, IRoutes } from '@src/types';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const MobileDrawer = ({ drawerToggle, setDrawerToggle }: IMobileDrawerProps) => {
     const [tabOpenIndex, setTabOpenIndex] = useState<null | number>(null);
@@ -22,16 +22,24 @@ const MobileDrawer = ({ drawerToggle, setDrawerToggle }: IMobileDrawerProps) => 
 
     const sideNavCloseHandler = () => setDrawerToggle(false)
 
-    return (
-        <div className={`${drawerToggle && 'bg-[--shadow-color] lg:hidden fixed w-[100%] !h-[100vh]'}`}>
-            <div className={`fixed top-0 left-0 w-[320px] !h-[100vh] bg-[--white] transition-all ease-in-out duration-500 overflow-y-auto ${drawerToggle ? 'translate-x-0' : 'translate-x-[-100%]'}`}>
-                <div className="flex justify-between items-center pb-4 pt-6 px-4">
-                    <CloseIcon
-                        fontSize="medium"
-                        onClick={sideNavCloseHandler}
-                    />
+    useEffect(() => {
+        if (drawerToggle) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+        return () => { document.body.style.overflow = ''; };
+    }, [drawerToggle]);
 
-                    <div className="w-16 h-16 sm:hidden ml-7 flex items-center justify-center">
+    return (
+        <div onClick={(e) => { if (e.target === e.currentTarget) sideNavCloseHandler(); }} className={drawerToggle ? 'fixed inset-0 z-[9999] bg-[--shadow-color] lg:hidden' : 'hidden'}>
+            <div className={`fixed top-0 left-0 w-full sm:w-[320px] h-full bg-[--white] transition-transform ease-in-out duration-500 overflow-y-auto ${drawerToggle ? 'translate-x-0' : '-translate-x-full'} z-[10000]`}>
+                <div className="flex justify-between items-center pb-4 pt-6 px-4">
+                    <button aria-label="Close mobile menu" onClick={sideNavCloseHandler} className="p-2">
+                        <CloseIcon fontSize="medium" />
+                    </button>
+
+                    <div className="w-16 h-16 ml-7 flex items-center justify-center">
                         <Image
                             src={Logos.verticalBlackLogo}
                             alt="logo"

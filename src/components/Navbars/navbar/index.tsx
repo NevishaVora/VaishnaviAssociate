@@ -51,19 +51,19 @@ const Navbar = () => {
     return (
         <div className="fixed top-0 left-0 w-full z-50 flex flex-col">
             {/* Top Bar Banner */}
-            <div className="bg-black text-white py-2 px-4 flex justify-center items-center text-xs sm:text-sm font-semibold tracking-wide">
+            {/* <div className="bg-black text-white py-2 px-4 flex justify-center items-center text-xs sm:text-sm font-semibold tracking-wide">
                 <span className="opacity-90">Become a service provider?</span>
                 <Link href="/login" className="text-white hover:text-[--primary-theme-color] underline ml-1.5 flex items-center gap-1 transition-all duration-300">
                     Click Here <ArrowForwardIcon style={{ fontSize: '15px' }} />
                 </Link>
-            </div>
+            </div> */}
             {/* Main Navbar */}
             <div className={`${isNavbarBg ? "bg-[--white] shadow-md border-b border-gray-100" : "bg-transparent"} w-full transition-all duration-300`}>
                 <div className="mainContainer py-4 flex justify-between items-center">
                     <Link href="/" className="w-[80px] lg:w-[100px] 3xl:w-[120px] block">
                         <Image
                             src={Logos.verticalBlackLogo}
-                            alt="One Hub Solutions Logo"
+                            alt="Vaishanvi Associate Solutions Logo"
                             width={1500}
                             height={1500}
                             className="w-full h-full object-contain"
@@ -85,7 +85,7 @@ const Navbar = () => {
                             </React.Fragment>
                         ))}
                     </div>
-                    <div className='flex items-center space-x-4'>
+                    {/* <div className='flex items-center space-x-4'>
                         <button
                             className="flex items-center gap-1 border-[2px] border-[--primary-theme-color] hover:bg-[--primary-theme-color] text-[--primary-theme-color] hover:text-[--white] px-4 py-1.5 rounded-full font-semibold text-[13px] xl:text-[14px] 2xl:text-[15px] 3xl:text-[18px] transition-all duration-300"
                             onClick={() => router.push("/login")}
@@ -93,10 +93,10 @@ const Navbar = () => {
                             <LoginIcon fontSize="small" style={{ fontSize: '16px' }} />
                             <span>Login</span>
                         </button>
-                        <div className='max-w lg:hidden cursor-pointer'>
-                            <ClearAllIcon onClick={sideNavHandler} className={`text-[30px] md:text-[40px]`} />
-                        </div>
-                    </div>
+                        <button aria-label="Open mobile menu" onClick={sideNavHandler} className='lg:hidden cursor-pointer p-1'>
+                            <ClearAllIcon className={`text-[30px] md:text-[40px]`} />
+                        </button>
+                    </div> */}
                 </div>
             </div>
             <Popover

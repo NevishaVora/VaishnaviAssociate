@@ -62,7 +62,7 @@ const ContactUs = () => {
                                     />
 
                                     <p className="text-[--gray] text-[18px]">
-                                        onehub18@gmail.com
+                                        vaishnaviassociates18@gmail.com
                                     </p>
                                 </div>
 

@@ -1,4 +1,4 @@
-# OneHub Website
+# Vaishnavi Website
 
 A modern company website built with Next.js, React, TypeScript, Tailwind CSS, and Material UI.
 

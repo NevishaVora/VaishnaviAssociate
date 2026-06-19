@@ -79,7 +79,7 @@ const BusinessLoan = () => {
             </h1>
 
             <p className="text-[--gray] max-w-xl leading-8 text-lg">
-              Businesses registered under GST can access a variety of loan options to support financial needs, expansion, and operating expenses. OneHub helps you choose the right loan and complete the application process.
+              Businesses registered under GST can access a variety of loan options to support financial needs, expansion, and operating expenses. Vaishnavi Associates helps you choose the right loan and complete the application process.
             </p>
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
@@ -94,7 +94,7 @@ const BusinessLoan = () => {
 
           <div className="rounded-[32px] border border-[#e6e8ed] bg-[--white] p-8 shadow-[0_20px_60px_rgba(247,148,29,0.12)]">
             <h2 className="text-3xl font-semibold text-[--secondary-theme-color] mb-5">
-              OneHub - Easy way to apply Business Loans
+              Vaishnavi Associates - Easy way to apply Business Loans
             </h2>
             <p className="text-[--gray] leading-8 mb-6">
               We simplify business loan applications by reviewing your financials, preparing required documents, and guiding you through lender requirements so you can access the capital your business needs.
@@ -139,7 +139,7 @@ const BusinessLoan = () => {
               Required Documents & Details to Apply Business Loans
             </h2>
             <p className="text-[--gray] leading-8 mb-8">
-              To apply for a business loan, gather the following details and documents. OneHub will review them and help you submit a complete application.
+              To apply for a business loan, gather the following details and documents. Vaishnavi Associates will review them and help you submit a complete application.
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2">

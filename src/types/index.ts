@@ -44,6 +44,7 @@ export interface IInformationData {
     addressLink: string,
     addressIframLink: string,
     contactNumber: string,
+    website: string,
 }
 
 export interface ITechnologiesChild {

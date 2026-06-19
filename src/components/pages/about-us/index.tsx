@@ -13,7 +13,7 @@ const AboutUs = () => {
             <Banner
                 route={"/about-us"}
                 name={"About Us"}
-                title={"About Onehub Solutions"}
+                title={"About Vaishnavi Associates"}
             />
 
             <WhoWeAre />
@@ -36,7 +36,7 @@ const AboutUs = () => {
                         </h2>
 
                         <p className="text-[--white] text-sm sm:text-base lg:text-[18px] max-w-5xl mx-auto">
-                            Onehub is a reliable digital transformation partner,
+                            Vaishnavi Associates is a reliable digital transformation partner,
                             providing customized software development, business
                             intelligence, and mobile/web app development services
                             to help you stay ahead in the dynamic business
