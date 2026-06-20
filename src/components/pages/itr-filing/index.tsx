@@ -74,7 +74,7 @@ const ItrFiling = () => {
               Compliance Service
             </span>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[--secondary-theme-color] leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-[42px] font-semibold text-[--secondary-theme-color] leading-tight">
               File Your ITR Quickly and Accurately with Vaishnavi Associates
             </h1>
 

@@ -77,7 +77,7 @@ const TradeLicense = () => {
             <span className="inline-flex items-center rounded-full bg-[#fff4e1] px-3 py-1.5 text-xs sm:text-sm font-semibold tracking-[0.12em] text-[#d97706]">
               Registration Service
             </span>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[--secondary-theme-color] leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-[42px] font-semibold text-[--secondary-theme-color] leading-tight">
               Apply for Trade License Easily with Vaishnavi Associates
             </h1>
 
@@ -119,7 +119,7 @@ const TradeLicense = () => {
         <div className="mt-20 space-y-12">
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="rounded-[32px] border border-[#e6e8ed] bg-[--white] p-8 shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
-              <h2 className="text-3xl font-semibold text-[--secondary-theme-color] mb-4">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[--secondary-theme-color] mb-4">
                 Who can issue a Trade License?
               </h2>
               <p className="text-[--gray] leading-8">
@@ -128,7 +128,7 @@ const TradeLicense = () => {
             </div>
 
             <div className="rounded-[32px] border border-[#e6e8ed] bg-[--white] p-8 shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
-              <h2 className="text-3xl font-semibold text-[--secondary-theme-color] mb-4">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[--secondary-theme-color] mb-4">
                 Main Objective of a Trade License Certificate?
               </h2>
               <p className="text-[--gray] leading-8">
@@ -138,7 +138,7 @@ const TradeLicense = () => {
           </div>
 
           <div className="rounded-[32px] border border-[#e6e8ed] bg-[--white] p-8 shadow-[0_15px_50px_rgba(0,0,0,0.08)]">
-            <h2 className="text-3xl font-semibold text-[--secondary-theme-color] mb-4">
+           <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[--secondary-theme-color] mb-4">
               Required Documents & Details to Apply Trade License
             </h2>
             <p className="text-[--gray] leading-8 mb-8">
