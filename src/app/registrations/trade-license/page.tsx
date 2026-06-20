@@ -1,7 +1,7 @@
-import TradeLicense from "@src/components/pages/trade-license";
+import RegistrationServicePage, { registrationServices } from "@src/components/pages/registration-service";
 
 const TradeLicensePage = () => {
-  return <TradeLicense />;
+  return <RegistrationServicePage service={registrationServices["trade-license"]} />;
 };
 
 export default TradeLicensePage;

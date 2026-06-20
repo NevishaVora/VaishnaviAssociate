@@ -67,14 +67,14 @@ const BusinessLoan = () => {
     <div>
       <Banner route="/loans" name="Business Loans" title="New Business Loans" />
 
-     <section className="mainContainer py-8 sm:py-10 md:py-20">
+      <section className="mainContainer py-8 sm:py-10 md:py-20">
         <div className="grid gap-8 md:gap-10 lg:grid-cols-2 items-start">
           <div className="space-y-8">
             <span className="inline-flex items-center rounded-full bg-[#fff4e1] px-3 py-1.5 text-xs sm:text-sm font-semibold tracking-[0.12em] text-[#d97706]">
               Loans Service
             </span>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[--secondary-theme-color] leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-[42px] font-semibold text-[--secondary-theme-color] leading-tight">
               Get Business Loans for Growth and Expansion
             </h1>
 
@@ -116,7 +116,7 @@ const BusinessLoan = () => {
         <div className="mt-20 space-y-12">
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="rounded-[32px] border border-[#e6e8ed] bg-[--white] p-8 shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
-              <h2 className="text-3xl font-semibold text-[--secondary-theme-color] mb-4">
+             <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[--secondary-theme-color] mb-4">
                 What is a Business Loan?
               </h2>
               <p className="text-[--gray] leading-8">
@@ -125,7 +125,7 @@ const BusinessLoan = () => {
             </div>
 
             <div className="rounded-[32px] border border-[#e6e8ed] bg-[--white] p-8 shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
-              <h2 className="text-3xl font-semibold text-[--secondary-theme-color] mb-4">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[--secondary-theme-color] mb-4">
                 Why should you apply for Business Loans?
               </h2>
               <p className="text-[--gray] leading-8">
