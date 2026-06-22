@@ -12,12 +12,9 @@ import { useState, useEffect } from 'react';
 
 const MobileDrawer = ({ drawerToggle, setDrawerToggle }: IMobileDrawerProps) => {
     const [tabOpenIndex, setTabOpenIndex] = useState<null | number>(null);
-    const [childTabOpenIndex, setChildTabOpenIndex] = useState<null | number>(null);
     const router = useRouter();
 
     const handleTabClick = (index: number) => setTabOpenIndex((prevIndex: null | number) => (prevIndex === index ? null : index));
-
-    const handleChildTabClick = (index: number) => setChildTabOpenIndex((prevIndex: null | number) => (prevIndex === index ? null : index));
 
     const sideNavCloseHandler = () => setDrawerToggle(false)
 
@@ -52,8 +49,8 @@ const MobileDrawer = ({ drawerToggle, setDrawerToggle }: IMobileDrawerProps) => 
                     {Routes.map((val: IRoutes, index: number) => (
                         <div key={index} className='w-full '>
                             <ListItemButton >
-                                <div className={`flex items-center justify-between gap-2 w-full border-b-2 border-[#CCD3D1] pb-1 tracking-wider transition-all ease-in-out duration-500` }>
-                                    <li className='!text-[20px] capitalize !font-semibold px-0 py-1 flex-1' onClick={() => {
+                                <div className={`flex items-center justify-between gap-2 w-full border-b-2 border-[#CCD3D1] pb-1 tracking-wider transition-all ease-in-out duration-500`}>
+                                    <li className='text-[18px] sm:text-[20px] capitalize font-semibold px-0 py-1 flex-1' onClick={() => {
                                         if (!val?.child) {
                                             router.push(val.path)
                                             sideNavCloseHandler()
@@ -73,42 +70,25 @@ const MobileDrawer = ({ drawerToggle, setDrawerToggle }: IMobileDrawerProps) => 
                                         {val?.child?.map((childRoute: IRoutesChild, idx: number) => {
                                             return (
                                                 <div key={idx}>
-                                                    <ListItemButton>
-                                                        <div className={`flex items-center justify-between gap-2 w-full border-b-2 border-[#CCD3D1] hover:text-[--primary-theme-color] pb-1 hover:border-[--primary-theme-color] transition-all ease-in-out duration-500 tracking-wider ml-2`}  >
-                                                            <li className='!text-[15px] capitalize !font-medium py-1 flex-1' onClick={() => {
-                                                                handleChildTabClick(idx)
-                                                            }}>{childRoute.name} </li>
-                                                            {childRoute?.child && <div className='cursor-pointer flex-shrink-0' onClick={() => {
-                                                                handleChildTabClick(idx)
-                                                            }}>
-                                                                <span>{childTabOpenIndex === idx ? <RemoveIcon /> : <AddIcon />}</span>
-                                                            </div>}
-                                                        </div>
-                                                    </ListItemButton>
-                                                    {childRoute?.child &&
-                                                        <Collapse in={childTabOpenIndex === idx} timeout="auto" unmountOnExit>
-                                                            <List component="div" disablePadding className='space-y-0'>
-                                                                {childRoute?.child?.map((subChild: { name: string, path: string, image?: string }, i: number) => {
-                                                                    return (
-                                                                        <ListItemButton key={i}>
-                                                                            <div className={`w-full hover:text-[--black] tracking-wider ml-5`} onClick={() => {
-                                                                                router.push(subChild.path)
-                                                                                sideNavCloseHandler()
-                                                                                setTabOpenIndex(null)
-                                                                                setChildTabOpenIndex(null)
-                                                                            }} >
-                                                                                <li className={`flex items-center space-x-2 !text-sm capitalize text-[--gray]`}>
-                                                                                    {subChild.image && (
-                                                                                        <Image src={subChild.image} alt='tech-logo' width={1000} height={1000} className='object-contain w-5' />
-                                                                                    )}
-                                                                                    <span>{subChild.name}</span>
-                                                                                </li>
-                                                                            </div>
-                                                                        </ListItemButton>
-                                                                    )
-                                                                })}
-                                                            </List>
-                                                        </Collapse>}
+                                                    <div className="px-4">
+                                                        <h3 className="text-[16px] font-semibold text-[--secondary-theme-color] mb-1">
+                                                            {childRoute.name}
+                                                        </h3>
+
+                                                        {childRoute?.child?.map((subChild, i) => (
+                                                            <div
+                                                                key={i}
+                                                                className="pl-4 py-1 text-[15px] text-[--gray] cursor-pointer hover:text-[--primary-theme-color]"
+                                                                onClick={() => {
+                                                                    router.push(subChild.path);
+                                                                    sideNavCloseHandler();
+                                                                    setTabOpenIndex(null);
+                                                                }}
+                                                            >
+                                                                 -  {subChild.name}
+                                                            </div>
+                                                        ))}
+                                                    </div>
                                                 </div>
                                             )
                                         })}

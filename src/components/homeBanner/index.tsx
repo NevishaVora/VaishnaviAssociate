@@ -17,7 +17,7 @@ const banners = [
 
 export default function HomeBanner() {
   return (
-   <section className="bg-[#f5f5f5] pt-40 md:pt-44 pb-12">
+   <section className="bg-[#f5f5f5] pt-10 md:pt-12 pb-12">
       <div className="mainContainer">
 
         <div className="relative max-w-[1400px] mx-auto">
